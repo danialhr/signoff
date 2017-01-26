@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<title>Brief // <%= singleBriefs.briefTitle %></title>
+
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/bxslider.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<link href="/css/mobile.css" rel="stylesheet" media="(max-width:1170px)">
+	</head>
+	<body>
+		<a class="mobile_menu black" data-open="nav14" id="mobile_menu"></a>
+
+    <section class="profilePage">
+      <div class="container">
+        <div class="inner">
+          <br>
+          <h2 class="left"><%= singleBriefs.briefTitle %></h2>
+          <div class="profilePage_skill"><%= singleBriefs.oneLiner %></div>
+            <div class="profilePage_text"><%= singleBriefs.dueDate %></div>
+            <div class="profilePage_text">SGD$<%= singleBriefs.estimatedBudget %></div>
+            </div>
+            <div class="author">
+              <img src="/img/dh.jpg" width="50" height="50" alt="">
+              <div class="left">
+                <div class="name">Creator Name</div>
+                <div class="info"><a class="red">VIEW PROFILE</a></div>
+              </div>
+              </div>
+
+
+      </div>
+      </section>
+    <section class="sec4_11">
+      <div class="container">
+        <h2>The <i> Brief</i></h2>
+        <div class="sec4_11_text"><%= singleBriefs.task %></div>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="sec1_6_block_btn">Send Proposal</a>
+      </section>
+		<footer class="footer11">
+			<div class="footer11_nav">
+				<div class="container">
+					<a href="#">Help</a>
+					<a href="#">Careers</a>
+					<a href="#">Developers</a>
+					<a href="#">Blog</a>
+					<a href="#">Privacy</a>
+					<a href="#">Terms</a>
+					<a href="#">About</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="left">
+						<a href="#" class="nav5_logo"><img src="/img/signoff_logo.png" width="100" height="60"></a>
+				</div>
+				<div class="left footer11_text">
+					© 2017 Pikpo. Welcome to Signoff a marketplace of opportunties.
+				</div>
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bxslider.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
