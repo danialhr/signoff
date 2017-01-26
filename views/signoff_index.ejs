@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<title>Signoff</title>
+
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/bxslider.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<link href="/css/mobile.css" rel="stylesheet" media="(max-width:1170px)">
+	</head>
+	<body>
+<nav>
+	<% if (currentUser) { %>
+			<% } else { %>
+					<a class="mobile_menu black" data-open="nav14" id="mobile_menu"></a>
+				<nav class="nav14" id="nav">
+					<a class="mobile_menu_close black"></a>
+					<div class="container">
+						<div class="right">
+							<a class="header14_icon notification"></a>
+							<a href="/users/signup" class="header14_icon messages">Sign Up</a>
+							<a><button type="button" class="sec1_6_block_btn" onclick="location.href='/users';">Login</button></a>
+						</div>
+
+						<div class="mobile_socials black">
+							<a href="#" target="_blank" class="fb"></a>
+							<a href="#" target="_blank" class="tw"></a>
+							<a href="#" target="_blank" class="in"></a>
+						</div>
+					</div>
+			<% } %>
+
+</nav>
+
+
+				<section class="profilePage">
+					<div class="container">
+						<div class="inner">
+              <a href="#" class="nav5_logo"><img src="/img/signoff_logo.png" width="200" height="120"></a>
+							<div class="profilePage_text">A marketplace for people seeking creative, media and event services.</div>
+							<br>
+              <button type="button" class="sec1_6_block_btn" onclick="location.href='/briefs';">Browse Brief</button>
+
+						</div>
+					</div>
+				</section>
+
+		<footer class="footer11">
+			<div class="footer11_nav">
+				<div class="container">
+					<a href="#">Help</a>
+					<a href="#">Careers</a>
+					<a href="#">Developers</a>
+					<a href="#">Blog</a>
+					<a href="#">Privacy</a>
+					<a href="#">Terms</a>
+					<a href="#">About</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="left">
+						<a href="#" class="nav5_logo"><img src="/img/signoff_logo.png" width="100" height="60"></a>
+				</div>
+				<div class="left footer11_text">
+					© 2017 Pikpo. Welcome to Signoff a marketplace of opportunties.
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

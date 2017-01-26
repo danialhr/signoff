@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  <title>Signoff</title>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<title>Signoff</title>
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bxslider.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/mobile.css" rel="stylesheet" media="(max-width:1170px)">
+</head>
+
+<header class="header5 header14" id="header14">
+  <div class="container">
+    <div class="header5_pretitle">The Brief // <i><%= singleBriefs.briefTitle %></i></div>
+    <form method='POST' action='/briefs/<%=singleBriefs._id%>?_method=PUT' class="header14_form">
+      <input type="text" class="place" name="briefTitle" value= "<%= singleBriefs.briefTitle %>" placeholder="Name of Brief" />
+      <br>
+        <input type="text" name="oneLiner" class="place" value= "<%= singleBriefs.oneLiner %>" placeholder="One Liner Brief" />
+        <br>
+          <input type="date" name="dueDate" class="place" value= "<%= singleBriefs.dueDate %>" placeholder="Due Date" />
+          <br>
+            <input type="text" name="estimatedBudget" class="place" value= "<%= singleBriefs.estimatedBudget %>" placeholder="Budget" />
+            <br>
+              <input type="text" name="task" class="place" value= "<%= singleBriefs.task %>" placeholder="The Brief" />
+              <br>
+      <button type="submit" class="sec3_5_btn">Update</button>
+  </form>
+  <br>
+  <div class="header14_text">
+    <a>----------------------------------</a>
+    <br>
+    <a>Are you sure you want to delete?</a></div>
+    <form method="POST" action="./?_method=DELETE">
+      <button type="submit" class="sec3_5_btn">Delete</button>
+    </form>
+</div>
+</header>
+</body>
+</html>

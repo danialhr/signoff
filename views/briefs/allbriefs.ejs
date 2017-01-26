@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<title>The Briefs</title>
+
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/bxslider.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<link href="/css/mobile.css" rel="stylesheet" media="(max-width:1170px)">
+	</head>
+	<body>
+		<a class="mobile_menu black" data-open="nav14" id="mobile_menu"></a>
+
+
+  <section class="proposalsview">
+    <div class="container">
+      <h2><i>Browse</i> Briefs</h2>
+        <button type="button" class="sec1_6_block_btn" onclick="location.href='/briefs/create';">Create A Brief</button>
+    <div class="flex">
+          <% listed_briefs.forEach(function(index) { %>
+					<div class="proposalsview_block" style="background-image:url(/img/proposalsview_img1.jpg);">
+						<div class="title"><a href="/briefs/<%=index._id%>"><%= index.briefTitle %></a></div>
+						<div class="text"><%= index.oneLiner %></div>
+						<br>
+						<div class="author">
+							<img src="/img/proposalsview_author1.jpg" alt="" />
+							<%= index.briefCreator %>
+						</div>
+						<div class="btn_holder">
+							<div class="time"><i><%= index.dueDate %></i></div>
+              <a href='/briefs/<%=index._id%>/edit'><button type="button" class="sec3_5_btn">Update</button></a>
+						</div>
+					</div>
+			<% }) %>
+      	</div>
+      	</div>
+      	</section>
+
+		<footer class="footer11">
+			<div class="footer11_nav">
+				<div class="container">
+					<a href="#">Help</a>
+					<a href="#">Careers</a>
+					<a href="#">Developers</a>
+					<a href="#">Blog</a>
+					<a href="#">Privacy</a>
+					<a href="#">Terms</a>
+					<a href="#">About</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="left">
+						<a href="#" class="nav5_logo"><img src="/img/signoff_logo.png" width="100" height="60"></a>
+				</div>
+				<div class="left footer11_text">
+					© 2017 Pikpo. Welcome to Signoff a marketplace of opportunties.
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bxslider.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

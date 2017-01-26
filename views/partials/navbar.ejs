@@ -1,0 +1,23 @@
+
+<% if (currentUser) { %>
+  <a class="mobile_menu black" data-open="nav14" id="mobile_menu"></a>
+  <nav class="nav14" id="nav">
+    <a class="mobile_menu_close black"></a>
+    <div class="container">
+      <a href="#" class="nav5_logo"><img src="/img/signoff_logo.png" width="100" height="60"></a>
+      <div class="right">
+        <a class="header14_user" href="/briefs">Browse Brief</a>
+        <a class="header14_user">My Briefs</a>
+        <a class="header14_user" href="/users/profile"><img src="/img/dh.jpg" width="36" height="36" alt="" />View Profile</a>
+        <a class="header14_user" href="/logout">Logout</a>
+      </div>
+      <div class="mobile_socials black">
+        <a href="#" target="_blank" class="fb"></a>
+        <a href="#" target="_blank" class="tw"></a>
+        <a href="#" target="_blank" class="in"></a>
+      </div>
+    </div>
+  </nav>
+    <% } else { %>
+
+    <% } %>
